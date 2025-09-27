@@ -1,0 +1,18 @@
+﻿## .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.pubxml
+*.pubxml.user
+
+# artifacts
+artifacts/
+out/
+publish/
+
+# secrets / local configs
+appsettings.*.local.json
+appsettings.container.json

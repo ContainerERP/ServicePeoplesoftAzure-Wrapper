@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project id="0" name="ISA_TEST2A" objectType="Records">
+  <rundate>23 Sep 2025 : 09 54 AM</rundate>
+  <primary_key>Record Name</primary_key>
+  <primary_key>Field Name</primary_key>
+  <secondary_key>Language Code</secondary_key>
+  <secondary_key>Index Identifier</secondary_key>
+  <secondary_key>Field Name</secondary_key>
+  <item id="ISA_T1" page="1">
+    <objname>ISA_T1</objname>
+    <objname></objname>
+    <source_status>*Changed</source_status>
+    <target_status>Absent</target_status>
+    <action>Copy</action>
+    <upgrade>Yes</upgrade>
+  </item>
+  <item id="ISA_T2" page="1">
+    <objname>ISA_T2</objname>
+    <objname></objname>
+    <source_status>*Changed</source_status>
+    <target_status>Absent</target_status>
+    <action>Copy</action>
+    <upgrade>Yes</upgrade>
+  </item>
+</project>

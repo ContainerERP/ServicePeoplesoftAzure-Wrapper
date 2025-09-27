@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsftRestWrapper", "PsftRestWrapper.csproj", "{82B48BE0-FF7B-43E5-A2A3-22F79D4B5C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82B48BE0-FF7B-43E5-A2A3-22F79D4B5C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B48BE0-FF7B-43E5-A2A3-22F79D4B5C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B48BE0-FF7B-43E5-A2A3-22F79D4B5C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B48BE0-FF7B-43E5-A2A3-22F79D4B5C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B3DF271-20F4-43A4-A7D9-FE7E188731CC}
+	EndGlobalSection
+EndGlobal
