@@ -59,26 +59,7 @@ Call an endpoint (example)
 
 PowerShell
 
-$body = @{
-  project   = "ISA_TEST2A"
-  sourceDb  = "DEVL"
-  targetDb  = "FSUAT"
-  dbUser    = "user"
-  dbPwd     = "pwd"
-  connectId = "people"
-  connectPwd= "pooo0ple"
-} | ConvertTo-Json
-
-curl -X POST http://localhost:60075/api/migrate/step/Compare `
-  -H "Content-Type: application/json" -d $body
-
-
-curl (bash)
-
-curl -X POST http://localhost:60075/api/migrate/step/Compare \
-  -H "Content-Type: application/json" \
-  -d '{
-{
+$body = @{ 
   "project": "ISA_TEST2A",
   "sourceServer": "",
   "sourceDb": "DEVL",
@@ -94,8 +75,11 @@ curl -X POST http://localhost:60075/api/migrate/step/Compare \
   "dbUser":   "dbuser",
   "dbPwd":    "dbpwd" ,  
   "exportForUndo": false 
-}
-  }'
+
+} | ConvertTo-Json
+
+curl -X POST http://localhost:60075/api/migrate/step/Compare `
+  -H "Content-Type: application/json" -d $body  
 
 Configuration
 
@@ -147,10 +131,4 @@ What’s next (Step 3)
 
 Azure Function that listens to ServiceNow and calls this wrapper.
 Stay tuned.
-
-License / Issues
-
-License: MIT (or your choice)
-
-Problems or ideas? Open an issue in this repo.
  
