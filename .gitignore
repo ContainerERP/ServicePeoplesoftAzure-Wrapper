@@ -1,18 +1,22 @@
-﻿## .NET / Visual Studio
+﻿# VS / .NET build output
 bin/
 obj/
+.publish/
+publish/
+runtimectx/
+
+# VS / Rider / user stuff
 .vs/
 *.user
 *.suo
-*.userprefs
+
+# Logs
+*.log
+# VS publish profiles
 *.pubxml
 *.pubxml.user
+**/Properties/PublishProfiles/
 
-# artifacts
-artifacts/
-out/
-publish/
-
-# secrets / local configs
-appsettings.*.local.json
-appsettings.container.json
+# App settings (keep samples only)
+*appsettings*.json
+!appsettings.sample.json

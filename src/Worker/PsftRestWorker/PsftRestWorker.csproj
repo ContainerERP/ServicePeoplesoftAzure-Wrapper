@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<PublishSingleFile>false</PublishSingleFile>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Azure.Storage.Queues" Version="12.*" />
+		<PackageReference Include="System.Net.Http.Json" Version="9.*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Psft.Shared\Psft.Shared.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Psft.Migrate.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7272",
+      "launchBrowser": false
+    }
+  }
+}

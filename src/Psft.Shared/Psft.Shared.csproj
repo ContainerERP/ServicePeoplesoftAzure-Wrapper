@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+    <!-- Multi-target so both the .NET 8 Functions app and any .NET 9 console/services can use it -->
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Optional but nice to have -->
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Abstractions used by your shared code -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.*" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.*" />
+
+    <!-- Add only if used inside shared code -->
+    <PackageReference Include="System.Net.Http.Json" Version="9.*" />
+    <PackageReference Include="Azure.Storage.Queues" Version="12.*" />
+    <!-- If you use Blob locks later:
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.*" /> -->
+  </ItemGroup>
+</Project>
